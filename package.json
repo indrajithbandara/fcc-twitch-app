@@ -1,0 +1,42 @@
+{
+  "name": "twitch-app",
+  "author": "Theo Despoudis thdespou@hotmail.com",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": {},
+  "license": "MIT",
+  "scripts": {
+    "start": "webpack-dev-server --inline",
+    "prod": "cross-env NODE_ENV=production webpack-dev-server --env.prod=true",
+    "build": "cross-env NODE_ENV=production webpack --env.prod=true"
+  },
+  "dependencies": {
+    "@cycle/dom": "^17.1.0",
+    "@cycle/http": "^13.2.0",
+    "@cycle/isolate": "^2.1.0",
+    "@cycle/run": "^3.1.0",
+    "babel-core": "^6.24.1",
+    "babel-loader": "^6.4.1",
+    "babel-plugin-transform-react-jsx": "^6.24.1",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "babel-register": "^6.24.1",
+    "cross-env": "^4.0.0",
+    "css-loader": "^0.28.0",
+    "file-loader": "^0.11.1",
+    "less": "^2.7.2",
+    "less-loader": "^4.0.3",
+    "mkdirp": "^0.5.1",
+    "progress-bar-webpack-plugin": "^1.9.3",
+    "snabbdom-jsx": "^0.3.1",
+    "style-loader": "^0.16.1",
+    "webpack": "^2.3.3",
+    "webpack-dev-server": "^2.4.2",
+    "webpack-hot-middleware": "^2.18.0",
+    "xstream": "^10.5.0"
+  },
+  "devDependencies": {
+    "cycle-onionify": "^3.2.0",
+    "cycle-restart": "^0.1.0"
+  }
+}
